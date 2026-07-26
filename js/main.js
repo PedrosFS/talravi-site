@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // TODO: troque a URL abaixo pelo endpoint do Formspree/Web3Forms (ver README.md)
-  const FORM_ENDPOINT = "https://formspree.io/f/SEU_ID_AQUI";
+  // TODO: troque a URL abaixo pelo endpoint do Formspree (ver README.md)
+  const FORM_ENDPOINT = "https://formspree.io/f/xaqrawjj";
 
   const form = document.getElementById("contact-form");
   const statusEl = document.getElementById("form-status");
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const submitBtn = form.querySelector("button[type='submit']");
       const originalText = submitBtn.textContent;
 
-      if (FORM_ENDPOINT.includes("SEU_ID_AQUI")) {
+      if (FORM_ENDPOINT.includes("xaqrawjj")) {
         showStatus(
           "Formulário ainda não configurado — veja o README para conectar ao Formspree.",
           "err"
