@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const submitBtn = form.querySelector("button[type='submit']");
       const originalText = submitBtn.textContent;
 
-      if (FORM_ENDPOINT.includes("xaqrawjj")) {
+      if (FORM_ENDPOINT.includes("SEU_ID_AQUI")) {
         showStatus(
           "Formulário ainda não configurado — veja o README para conectar ao Formspree.",
           "err"
