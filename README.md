@@ -1,41 +1,55 @@
-# Site Talravi Consultoria
+## Projeto: Site Talravi Consultoria
+O que eu já fiz (Estrutura atual)
+A base do site já está montada e rodando. Deixei o projeto organizado assim:
 
-## Estrutura
-```
-index.html      → página única (Início, Serviços, Sobre, Contato)
-css/style.css   → todo o visual
-js/main.js      → menu mobile + envio do formulário
-img/            → coloque logo/fotos aqui
-```
+index.html: É uma página única (single page) com as seções Início, Serviços, Sobre e Contato.
 
-## O que falta preencher (marcado como [TODO] no código)
-- Texto real da seção "Sobre" (index.html)
-- Telefone/WhatsApp, e-mail e endereço na seção "Contato"
-- Número de WhatsApp no botão flutuante (`js` não precisa mexer, é no `index.html`, procure por `wa.me/55SEUNUMERO`)
-- Logo de verdade (hoje é só a letra "T" estilizada — pode trocar por `<img>` com o arquivo em `img/`)
+css/style.css: Onde eu coloquei toda a parte visual e o estilo do site.
 
-## Publicar no GitHub Pages (preview grátis)
-1. Crie um repositório novo no GitHub (ex: `talravi-site`)
-2. Suba estes arquivos (pelo site do GitHub, arrastando, ou via `git push`)
-3. Vá em **Settings → Pages**
-4. Em "Source", selecione a branch `main` e a pasta `/root`
-5. Salve — em ~1 minuto o site fica em `https://SEUUSUARIO.github.io/talravi-site/`
+js/main.js: Aqui tá a lógica pro menu do celular funcionar e o código preparado pro envio de e-mails.
 
-## Trocar para o domínio da cliente (depois)
-Quando ela comprar o domínio (ex: `talraviconsultoria.com.br`):
-1. No mesmo painel **Settings → Pages**, campo "Custom domain", coloque o domínio
-2. No painel do domínio (Registro.br, GoDaddy etc.), crie um registro **CNAME** apontando `www` para `SEUUSUARIO.github.io`
-   (ou registros tipo **A** apontando para os IPs do GitHub Pages — o próprio painel do GitHub mostra quais)
-3. Aguarde a propagação (pode levar algumas horas)
+img/: Pasta que deixei separada pra colocar a logo oficial e as fotos.
 
-## Ativar o formulário de contato (Formspree — grátis até 50 envios/mês)
-1. Crie conta em https://formspree.io
-2. Crie um novo formulário, copie o endpoint (algo como `https://formspree.io/f/xxxxxxx`)
-3. Abra `js/main.js` e troque a linha:
-   ```js
-   const FORM_ENDPOINT = "https://formspree.io/f/SEU_ID_AQUI";
-   ```
-   pelo seu endpoint real
-4. Pronto — o formulário passa a enviar e-mails de verdade
+## O que vou fazer em seguida (Meus próximos passos)
+Abaixo é a minha listinha do que falta pra finalizar e entregar o site rodando:
 
-Até lá, o botão flutuante de WhatsApp já funciona assim que você trocar `wa.me/55SEUNUMERO` pelo número certo.
+## 1. Colocar o conteúdo real (Substituir os TODOs)
+Preciso escrever o texto definitivo da seção "Sobre" direto no index.html.
+
+Colocar as informações reais de Contato (telefone, zap, e-mail e endereço).
+
+Configurar o link do botão flutuante do WhatsApp. É só eu ir no HTML, achar o wa.me/55SEUNUMERO e colocar o número certo.
+
+Trocar a logo provisória (que hoje é só um texto com um "T") pela imagem oficial puxando da pasta img/.
+
+## 2. Subir um Preview de graça (GitHub Pages)
+Vou botar o site no ar provisoriamente pra cliente conseguir ver como tá ficando:
+
+Criar um repositório no meu GitHub (ex: talravi-site).
+
+Fazer o push dos arquivos pra lá.
+
+Ir na aba Settings → Pages do repositório.
+
+Em "Source", marcar a branch main e a pasta /root.
+
+Salvar. Daqui a pouco o GitHub me gera um link tipo [https://MEUUSUARIO.github.io/talravi-site/](https://MEUUSUARIO.github.io/talravi-site/).
+
+## 3. Fazer o formulário de contato funcionar
+Vou usar o plano gratuito do Formspree pra fazer os e-mails chegarem pra ela:
+
+Criar minha conta lá no https://formspree.io.
+
+Criar um formulário novo e copiar o link de endpoint deles (algo como [https://formspree.io/f/xxxxxxx](https://formspree.io/f/xxxxxxx)).
+
+Abrir o meu arquivo js/main.js e trocar a linha do FORM_ENDPOINT, substituindo o SEU_ID_AQUI pelo endpoint real.
+Nota: O botão do WhatsApp já vai estar funcionando bem antes disso.
+
+## 4. Apontar pro domínio oficial (Última etapa)
+Quando a cliente comprar o domínio de verdade (tipo talraviconsultoria.com.br), vou fazer a ligação:
+
+Voltar no painel do GitHub (Settings → Pages) e colocar o domínio no campo "Custom domain".
+
+Entrar no painel de onde o domínio foi comprado (Registro.br, etc) e criar um registro CNAME apontando o www pro link do meu GitHub Pages.
+
+Esperar propagar na internet e o site estará oficialmente no ar.
