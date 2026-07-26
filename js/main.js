@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   // TODO: troque a URL abaixo pelo endpoint do Formspree (ver README.md)
-  const FORM_ENDPOINT = "https://formspree.io/f/xaqrawjj";
+  const FORM_ENDPOINT = "https://formspree.io/f/xkodknbq";
 
   const form = document.getElementById("contact-form");
   const statusEl = document.getElementById("form-status");
